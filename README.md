@@ -11,16 +11,16 @@ An end-to-end platform for building, training, evaluating, and improving Natural
 
 ## 📋 Table of Contents
 - Overview  
-- Features  
-- Architecture  
+- Features   
 - Installation  
 - Usage  
 - Project Structure  
 - Tech Stack  
-- Milestones  
-- Contributing  
-- License  
-- Team  
+- Milestones   
+- License
+- Acknowledgments
+- Future Enhancements
+-   
 
 ---
 
