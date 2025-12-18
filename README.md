@@ -97,7 +97,7 @@ cd BottrainerNLUProject
 ```
 ### Step 2: Create Virtual Environment
 
-``
+
 ###### Windows
 ```bash
 python -m venv venv
@@ -157,13 +157,14 @@ Backend API: http://localhost:8000
 API Documentation: http://localhost:8000/docs
 
 ### MySQL Database Setup
-1. Install MySQL and create a database:
-```bash
-CREATE DATABASE chatbot_nlu_db;
 
-2. Update .env with your MySQL credentials
+###### 1. Install MySQL and create a database:
+  ```bash
+  CREATE DATABASE chatbot_nlu_db;
+```
+###### 2. Update .env with your MySQL credentials
 
-3. Install MySQL connector:
+###### 3. Install MySQL connector:
 
 ```bash
 pip install pymysql
