@@ -99,21 +99,24 @@ cd chatbot-nlu-platform
 ```bash
 ```
 ###### Windows
+```bash
 python -m venv venv
 venv\Scripts\activate
-``
+```
 ###### Linux / Mac
+```bash
 python3 -m venv venv
 source venv/bin/activate
 
-``
+```
 ### Step 3: Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 ### Step 4: Environment Variables
-```bash
+
 Create a .env file in the root directory:
+```bash
 
 DATABASE_URL=sqlite:///./chatbot_nlu.db
 JWT_SECRET_KEY=your-secret-key
@@ -147,7 +150,7 @@ Backend API: http://localhost:8000
 
 Swagger Docs: http://localhost:8000/docs
 
-``
+
 ### 📖 Usage
 
 1. Register / Login
