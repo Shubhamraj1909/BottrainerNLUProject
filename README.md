@@ -120,18 +120,19 @@ Copy code
 git clone https://github.com/yourusername/chatbot-nlu-platform.git
 cd chatbot-nlu-platform
 Step 2: Create Virtual Environment
-bash
-Copy code
+
+```bash
 # Windows
 python -m venv venv
 venv\Scripts\activate
 
+```bash
 # Linux / Mac
 python3 -m venv venv
 source venv/bin/activate
 Step 3: Install Dependencies
-bash
-Copy code
+
+```bash
 pip install -r requirements.txt
 Step 4: Environment Variables
 Create a .env file:
