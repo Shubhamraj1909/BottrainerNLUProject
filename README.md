@@ -154,7 +154,7 @@ Frontend
 cd frontend
 streamlit run Home.py
 
-Access URLs
+ Access URLs
 
 Frontend: http://localhost:8501
 
@@ -181,7 +181,7 @@ Swagger Docs: http://localhost:8000/docs
    
 
 ### 📁 Project Structure
-
+```text
 BottrainerNLUProject/
 ├── newback.py              # FastAPI Backend
 ├── newfront.py             # Streamlit Frontend
@@ -191,13 +191,14 @@ BottrainerNLUProject/
 └── sportsdataset.json      # Sample sports dataset
 
 
+
 ## 🛠️ Tech Stack
 
 | Component  | Technology           |
 | ---------- | -------------------- |
 | Frontend   | Streamlit            |
 | Backend    | FastAPI              |
-| Database   | SQLite               |
+| Database   | mySql               |
 | Auth       | JWT, bcrypt          |
 | NLU        | spaCy, Rasa, BERT    |
 | ML         | scikit-learn, pandas |
@@ -205,13 +206,13 @@ BottrainerNLUProject/
 
 ### 📅 Milestones
 
-Setup & Authentication ✅
+- Setup & Authentication ✅
 
-Annotation & Training ✅
+- Annotation & Training ✅
 
-Evaluation & Reporting ✅
+- Evaluation & Reporting ✅
 
-Active Learning & Admin Panel ✅
+- Active Learning & Admin Panel ✅
 
 
 Just tell me 👍
