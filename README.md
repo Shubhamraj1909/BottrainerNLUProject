@@ -20,7 +20,7 @@ An end-to-end platform for building, training, evaluating, and improving Natural
 - License
 - Acknowledgments
 - Future Enhancements
--   
+   
 
 ---
 
