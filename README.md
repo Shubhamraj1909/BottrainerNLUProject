@@ -103,11 +103,6 @@ Traditional chatbot development relies on separate tools for annotation, trainin
 │ (spaCy • Rasa • BERT • Custom Models) │
 └─────────────────────────────────────────────────────────────┘
 
-yaml
-Copy code
-
----
-
 ## 🚀 Installation
 
 ### Prerequisites
@@ -119,45 +114,46 @@ Copy code
 ```bash
 git clone https://github.com/yourusername/chatbot-nlu-platform.git
 cd chatbot-nlu-platform
+
 Step 2: Create Virtual Environment
 
-```bash
-# Windows
+Windows
 python -m venv venv
 venv\Scripts\activate
 
-```bash
-# Linux / Mac
+Linux / Mac
 python3 -m venv venv
 source venv/bin/activate
+
 Step 3: Install Dependencies
-
-```bash
 pip install -r requirements.txt
-Step 4: Environment Variables
-Create a .env file:
 
-```bash
+Step 4: Environment Variables
+
+Create a .env file in the root directory:
+
 DATABASE_URL=sqlite:///./chatbot_nlu.db
 JWT_SECRET_KEY=your-secret-key
 JWT_ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=30
 MODEL_SAVE_PATH=./saved_models
 UPLOAD_FOLDER=./uploaded_files
+
 Step 5: Initialize Database
-bash
-Copy code
 python backend/init_db.py
+
 Step 6: Run Application
 
-```bash
-# Backend
+Backend
+
 cd backend
 uvicorn app.main:app --reload --port 8000
 
-# Frontend
+Frontend
+
 cd frontend
 streamlit run Home.py
+
 Access URLs
 
 Frontend: http://localhost:8501
@@ -166,43 +162,47 @@ Backend API: http://localhost:8000
 
 Swagger Docs: http://localhost:8000/docs
 
-### 📖 Usage
-Register/Login
+## 📖Usage
 
-Create Workspace
+1. Register / Login
 
-Upload Dataset (CSV/JSON)
+2. Create Workspace
 
-Annotate Data
+3. Upload Dataset (CSV/JSON)
 
-Train Model
+4. Annotate Data
 
-Evaluate Performance
+5. Train Model
 
-Apply Active Learning
+6. Evaluate Performance
 
-📁 Project Structure
+7. Apply Active Learning
 
+### 📁 Project Structure
 BottrainerNLUProject/
 ├── newback.py              # FastAPI Backend
-├── newfront.py             # Streamlit Frontend  
+├── newfront.py             # Streamlit Frontend
 ├── requirements.txt        # Python dependencies
-├── runtime.txt            # Python version specification
-├── traveldatasett.json    # Sample travel dataset
-└── sportsdataset.json     # Sample sports dataset
+├── runtime.txt             # Python version specification
+├── traveldatasett.json     # Sample travel dataset
+└── sportsdataset.json      # Sample sports dataset
 
-### 🛠️ Tech Stack
-Component	Technology
-Frontend	Streamlit
-Backend	FastAPI
-Database	SQLite
-Auth	JWT, bcrypt
-NLU	spaCy, Rasa, BERT
-ML	scikit-learn, pandas
-Deployment	Docker
+
+## 🛠️ Tech Stack
+
+| Component  | Technology           |
+| ---------- | -------------------- |
+| Frontend   | Streamlit            |
+| Backend    | FastAPI              |
+| Database   | SQLite               |
+| Auth       | JWT, bcrypt          |
+| NLU        | spaCy, Rasa, BERT    |
+| ML         | scikit-learn, pandas |
+| Deployment | Docker               |
 
 ### 📅 Milestones
-Setup & Auth ✅
+
+Setup & Authentication ✅
 
 Annotation & Training ✅
 
@@ -210,52 +210,6 @@ Evaluation & Reporting ✅
 
 Active Learning & Admin Panel ✅
 
-🤝 Contributing
-
-git checkout -b feature/YourFeature
-git commit -m "Add new feature"
-git push origin feature/YourFeature
-Open a Pull Request 🚀
-
-📄 License
-Licensed under the MIT License.
-
-👥 Team
-Shubham Raj – Project Lead & Developer
-
-Team Members – Contributors
-
-Guide: Naveena – Project Mentor
-
-🙏 Acknowledgments
-Open-source community
-
-Infosys Springboard Program
-
-🔮 Future Enhancements
-Cloud deployment
-
-Multi-language support
-
-Real-time chatbot testing
-
-Advanced explainability
-
-📞 Support
-Use GitHub Issues
-
-Email: your.email@example.com
-
-yaml
-Copy code
-
----
-
-If you want, I can:
-- Optimize this for **recruiters**
-- Add **screenshots section**
-- Shorten it for **hackathons**
-- Create a **portfolio-friendly version**
 
 Just tell me 👍
 
