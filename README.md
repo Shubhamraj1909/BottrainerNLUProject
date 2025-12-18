@@ -96,7 +96,7 @@ cd chatbot-nlu-platform
 
 ```
 ### Step 2: Create Virtual Environment
-
+```bash
 Windows
 python -m venv venv
 venv\Scripts\activate
@@ -105,12 +105,13 @@ Linux / Mac
 python3 -m venv venv
 source venv/bin/activate
 
-``
+```
 ### Step 3: Install Dependencies
+```bash
 pip install -r requirements.txt
-
+``
 ### Step 4: Environment Variables
-
+```bash
 Create a .env file in the root directory:
 
 DATABASE_URL=sqlite:///./chatbot_nlu.db
@@ -121,10 +122,11 @@ MODEL_SAVE_PATH=./saved_models
 UPLOAD_FOLDER=./uploaded_files
 
 ### Step 5: Initialize Database
+```bash
 python backend/init_db.py
 
 ### Step 6: Run Application
-
+```bash
 Backend
 
 cd backend
@@ -143,7 +145,7 @@ Backend API: http://localhost:8000
 
 Swagger Docs: http://localhost:8000/docs
 
-``
+```
 ### 📖 Usage
 
 1. Register / Login
