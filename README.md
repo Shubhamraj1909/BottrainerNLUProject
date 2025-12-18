@@ -191,8 +191,8 @@ BottrainerNLUProject/
 └── sportsdataset.json      # Sample sports dataset
 
 
-
-## 🛠️ Tech Stack
+```
+### 🛠️ Tech Stack
 
 | Component  | Technology           |
 | ---------- | -------------------- |
@@ -214,8 +214,27 @@ BottrainerNLUProject/
 
 - Active Learning & Admin Panel ✅
 
+### 📄 License
 
-Just tell me 👍
+      Licensed under the MIT License.
+  
+ 
+### 🙏 Acknowledgments
+
+Open-source community
+
+Infosys Springboard Program
+
+### 🔮 Future Enhancements
+
+Cloud deployment
+
+- Multi-language support
+
+- Real-time chatbot testing
+
+- Advanced explainability
+
 
 
 
