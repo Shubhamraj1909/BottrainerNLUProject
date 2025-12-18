@@ -91,13 +91,13 @@ Traditional chatbot development relies on separate tools for annotation, trainin
 
 ### Step 1: Clone Repository
 ```bash
-git clone https://github.com/yourusername/chatbot-nlu-platform.git
-cd chatbot-nlu-platform
+git clone https://github.com/Shubhamraj1909/BottrainerNLUProject.git
+cd BottrainerNLUProject
 
 ```
 ### Step 2: Create Virtual Environment
-```bash
-```
+
+``
 ###### Windows
 ```bash
 python -m venv venv
@@ -118,29 +118,35 @@ pip install -r requirements.txt
 Create a .env file in the root directory:
 ```bash
 
-DATABASE_URL=sqlite:///./chatbot_nlu.db
+# MySQL Database Configuration
+DATABASE_URL=mysql+pymysql://username:password@localhost:3306/chatbot_nlu_db
+
+# JWT Configuration
 JWT_SECRET_KEY=your-secret-key
 JWT_ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=30
+
+# File & Model Storage
 MODEL_SAVE_PATH=./saved_models
 UPLOAD_FOLDER=./uploaded_files
+
 ```
 ### Step 5: Initialize Database
 ```bash
-python backend/init_db.py
+# The database will be automatically created when you first run the backend
+python newback.py
 ```
 ### Step 6: Run Application
 
-``
-###### Backend
+
+###### Terminal 1 - Backend (FastAPI)
 ```bash
-cd backend
-uvicorn app.main:app --reload --port 8000
+
+python newback.py
 ```
-###### Frontend
+###### Terminal 2 - Frontend (Streamlit)
 ```bash
-cd frontend
-streamlit run Home.py
+streamlit run newfront.py
 ```
  ###### Access URLs
 
@@ -148,9 +154,20 @@ Frontend: http://localhost:8501
 
 Backend API: http://localhost:8000
 
-Swagger Docs: http://localhost:8000/docs
+API Documentation: http://localhost:8000/docs
 
+### MySQL Database Setup
+1. Install MySQL and create a database:
+```bash
+CREATE DATABASE chatbot_nlu_db;
 
+2. Update .env with your MySQL credentials
+
+3. Install MySQL connector:
+
+```bash
+pip install pymysql
+```
 ### 📖 Usage
 
 1. Register / Login
@@ -204,14 +221,14 @@ BottrainerNLUProject/
 
 ### 📄 License
 
-      Licensed under the MIT License.
+      MIT License.
   
  
 ### 🙏 Acknowledgments
 
-Open-source community
+- Open-source community
 
-Infosys Springboard Program
+- Infosys Springboard Program
 
 ### 🔮 Future Enhancements
 
