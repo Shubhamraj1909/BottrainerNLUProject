@@ -137,8 +137,7 @@ pip install -r requirements.txt
 Step 4: Environment Variables
 Create a .env file:
 
-env
-Copy code
+```bash
 DATABASE_URL=sqlite:///./chatbot_nlu.db
 JWT_SECRET_KEY=your-secret-key
 JWT_ALGORITHM=HS256
@@ -150,8 +149,8 @@ bash
 Copy code
 python backend/init_db.py
 Step 6: Run Application
-bash
-Copy code
+
+```bash
 # Backend
 cd backend
 uvicorn app.main:app --reload --port 8000
@@ -167,7 +166,7 @@ Backend API: http://localhost:8000
 
 Swagger Docs: http://localhost:8000/docs
 
-📖 Usage
+### 📖 Usage
 Register/Login
 
 Create Workspace
@@ -183,19 +182,16 @@ Evaluate Performance
 Apply Active Learning
 
 📁 Project Structure
-kotlin
-Copy code
-chatbot-nlu-platform/
-├── backend/
-├── frontend/
-├── data/
-├── saved_models/
-├── uploaded_files/
-├── docs/
-├── docker-compose.yml
-├── requirements.txt
-└── README.md
-🛠️ Tech Stack
+
+BottrainerNLUProject/
+├── newback.py              # FastAPI Backend
+├── newfront.py             # Streamlit Frontend  
+├── requirements.txt        # Python dependencies
+├── runtime.txt            # Python version specification
+├── traveldatasett.json    # Sample travel dataset
+└── sportsdataset.json     # Sample sports dataset
+
+### 🛠️ Tech Stack
 Component	Technology
 Frontend	Streamlit
 Backend	FastAPI
@@ -205,7 +201,7 @@ NLU	spaCy, Rasa, BERT
 ML	scikit-learn, pandas
 Deployment	Docker
 
-📅 Milestones
+### 📅 Milestones
 Setup & Auth ✅
 
 Annotation & Training ✅
@@ -215,8 +211,7 @@ Evaluation & Reporting ✅
 Active Learning & Admin Panel ✅
 
 🤝 Contributing
-bash
-Copy code
+
 git checkout -b feature/YourFeature
 git commit -m "Add new feature"
 git push origin feature/YourFeature
