@@ -162,9 +162,8 @@ Backend API: http://localhost:8000
 
 Swagger Docs: http://localhost:8000/docs
 
+```
 ### 📖 Usage
-### 📖 Usage
-
 
 1. Register / Login
 
@@ -179,8 +178,10 @@ Swagger Docs: http://localhost:8000/docs
 6. Evaluate Performance
 
 7. Apply Active Learning
+   
 
 ### 📁 Project Structure
+
 BottrainerNLUProject/
 ├── newback.py              # FastAPI Backend
 ├── newfront.py             # Streamlit Frontend
