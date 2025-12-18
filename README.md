@@ -82,27 +82,6 @@ Traditional chatbot development relies on separate tools for annotation, trainin
 
 ---
 
-## 🏗️ Architecture
-┌─────────────────────────────────────────────────────────────┐
-│ Streamlit Frontend │
-│ (Auth • Dashboard • Annotation • Evaluation) │
-└──────────────────────────────┬──────────────────────────────┘
-│
-┌──────────────────────────────▼──────────────────────────────┐
-│ FastAPI Backend │
-│ (REST API • Business Logic • Model Orchestration) │
-└──────────────────────────────┬──────────────────────────────┘
-│
-┌──────────────────────────────▼──────────────────────────────┐
-│ SQLite Database │
-│ (Users • Workspaces • Datasets • Models • Feedback) │
-└──────────────────────────────┬──────────────────────────────┘
-│
-┌──────────────────────────────▼──────────────────────────────┐
-│ NLU Model Ecosystem │
-│ (spaCy • Rasa • BERT • Custom Models) │
-└─────────────────────────────────────────────────────────────┘
-
 ## 🚀 Installation
 
 ### Prerequisites
@@ -115,7 +94,8 @@ Traditional chatbot development relies on separate tools for annotation, trainin
 git clone https://github.com/yourusername/chatbot-nlu-platform.git
 cd chatbot-nlu-platform
 
-Step 2: Create Virtual Environment
+```
+### Step 2: Create Virtual Environment
 
 Windows
 python -m venv venv
@@ -125,10 +105,11 @@ Linux / Mac
 python3 -m venv venv
 source venv/bin/activate
 
-Step 3: Install Dependencies
+``
+### Step 3: Install Dependencies
 pip install -r requirements.txt
 
-Step 4: Environment Variables
+### Step 4: Environment Variables
 
 Create a .env file in the root directory:
 
@@ -139,10 +120,10 @@ ACCESS_TOKEN_EXPIRE_MINUTES=30
 MODEL_SAVE_PATH=./saved_models
 UPLOAD_FOLDER=./uploaded_files
 
-Step 5: Initialize Database
+### Step 5: Initialize Database
 python backend/init_db.py
 
-Step 6: Run Application
+### Step 6: Run Application
 
 Backend
 
@@ -162,7 +143,7 @@ Backend API: http://localhost:8000
 
 Swagger Docs: http://localhost:8000/docs
 
-```
+``
 ### 📖 Usage
 
 1. Register / Login
@@ -227,7 +208,7 @@ Infosys Springboard Program
 
 ### 🔮 Future Enhancements
 
-Cloud deployment
+- Cloud deployment
 
 - Multi-language support
 
