@@ -97,19 +97,20 @@ cd chatbot-nlu-platform
 ```
 ### Step 2: Create Virtual Environment
 ```bash
-Windows
+```
+###### Windows
 python -m venv venv
 venv\Scripts\activate
-
-Linux / Mac
+``
+###### Linux / Mac
 python3 -m venv venv
 source venv/bin/activate
 
-```
+``
 ### Step 3: Install Dependencies
 ```bash
 pip install -r requirements.txt
-``
+```
 ### Step 4: Environment Variables
 ```bash
 Create a .env file in the root directory:
@@ -120,24 +121,25 @@ JWT_ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=30
 MODEL_SAVE_PATH=./saved_models
 UPLOAD_FOLDER=./uploaded_files
-
+```
 ### Step 5: Initialize Database
 ```bash
 python backend/init_db.py
-
+```
 ### Step 6: Run Application
-```bash
-Backend
 
+``
+###### Backend
+```bash
 cd backend
 uvicorn app.main:app --reload --port 8000
-
-Frontend
-
+```
+###### Frontend
+```bash
 cd frontend
 streamlit run Home.py
-
- Access URLs
+```
+ ###### Access URLs
 
 Frontend: http://localhost:8501
 
@@ -145,7 +147,7 @@ Backend API: http://localhost:8000
 
 Swagger Docs: http://localhost:8000/docs
 
-```
+``
 ### 📖 Usage
 
 1. Register / Login
